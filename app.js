@@ -170,9 +170,12 @@ $("file-import").addEventListener("change", async (e) => {
   try {
     const data = JSON.parse(await file.text());
     if (!Array.isArray(data)) throw new Error();
-    words = data
-      .filter((w) => w.term && w.def)
+    const have = new Set(words.map((w) => w.term.toLowerCase()));
+    const fresh = data
+      .filter((w) => w.term && w.def && !have.has(String(w.term).toLowerCase()))
       .map((w, i) => ({ id: Date.now() + i, term: String(w.term), def: String(w.def), known: !!w.known }));
+    words = words.concat(fresh);
+    alert(`Добавлено слов: ${fresh.length}`);
     save();
     renderList();
   } catch (err) {
