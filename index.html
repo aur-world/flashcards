@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Карточки слов</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <h1>Карточки слов</h1>
+      <nav class="tabs">
+        <button class="tab active" data-view="study">Учить</button>
+        <button class="tab" data-view="words">Слова</button>
+      </nav>
+    </header>
+
+    <!-- Режим обучения -->
+    <section id="study" class="view">
+      <p id="progress" class="progress"></p>
+      <div id="card" class="card" tabindex="0" aria-label="Карточка, нажмите чтобы перевернуть">
+        <div class="card-inner">
+          <div class="face front"><span id="front-text"></span></div>
+          <div class="face back"><span id="back-text"></span></div>
+        </div>
+      </div>
+      <div class="actions">
+        <button id="btn-again" class="btn ghost">Ещё не знаю</button>
+        <button id="btn-know" class="btn solid">Знаю</button>
+      </div>
+      <div class="options">
+        <button id="btn-shuffle" class="link">Перемешать</button>
+        <button id="btn-swap" class="link">Поменять стороны</button>
+        <button id="btn-restart" class="link">Начать заново</button>
+      </div>
+      <p class="hint">Пробел — перевернуть, ← не знаю, → знаю</p>
+    </section>
+
+    <!-- Управление словами -->
+    <section id="words" class="view hidden">
+      <form id="add-form" class="add-form">
+        <input id="in-term" placeholder="Слово (например, apple)" required autocomplete="off">
+        <input id="in-def" placeholder="Перевод (например, яблоко)" required autocomplete="off">
+        <button class="btn solid" type="submit">Добавить</button>
+      </form>
+      <ul id="word-list" class="word-list"></ul>
+      <div class="options">
+        <button id="btn-export" class="link">Скачать список</button>
+        <label class="link">Загрузить список<input id="file-import" type="file" accept=".json" hidden></label>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
