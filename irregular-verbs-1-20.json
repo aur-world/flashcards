@@ -1,0 +1,102 @@
+[
+  {
+    "term": "бить, побеждать",
+    "def": "beat\nbeat\nbeaten",
+    "known": false
+  },
+  {
+    "term": "становиться",
+    "def": "become\nbecame\nbecome",
+    "known": false
+  },
+  {
+    "term": "начинать",
+    "def": "begin\nbegan\nbegun",
+    "known": false
+  },
+  {
+    "term": "гнуть, сгибать",
+    "def": "bend\nbent\nbent",
+    "known": false
+  },
+  {
+    "term": "держать пари",
+    "def": "bet\nbet\nbet",
+    "known": false
+  },
+  {
+    "term": "кусать",
+    "def": "bite\nbit\nbitten",
+    "known": false
+  },
+  {
+    "term": "кровоточить",
+    "def": "bleed\nbled\nbled",
+    "known": false
+  },
+  {
+    "term": "дуть",
+    "def": "blow\nblew\nblown",
+    "known": false
+  },
+  {
+    "term": "ломать",
+    "def": "break\nbroke\nbroken",
+    "known": false
+  },
+  {
+    "term": "приносить",
+    "def": "bring\nbrought\nbrought",
+    "known": false
+  },
+  {
+    "term": "строить",
+    "def": "build\nbuilt\nbuilt",
+    "known": false
+  },
+  {
+    "term": "покупать",
+    "def": "buy\nbought\nbought",
+    "known": false
+  },
+  {
+    "term": "ловить, поймать",
+    "def": "catch\ncaught\ncaught",
+    "known": false
+  },
+  {
+    "term": "выбирать",
+    "def": "choose\nchose\nchosen",
+    "known": false
+  },
+  {
+    "term": "приходить",
+    "def": "come\ncame\ncome",
+    "known": false
+  },
+  {
+    "term": "стоить",
+    "def": "cost\ncost\ncost",
+    "known": false
+  },
+  {
+    "term": "резать",
+    "def": "cut\ncut\ncut",
+    "known": false
+  },
+  {
+    "term": "копать",
+    "def": "dig\ndug\ndug",
+    "known": false
+  },
+  {
+    "term": "делать",
+    "def": "do\ndid\ndone",
+    "known": false
+  },
+  {
+    "term": "рисовать, тянуть",
+    "def": "draw\ndrew\ndrawn",
+    "known": false
+  }
+]
